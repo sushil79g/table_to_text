@@ -62,11 +62,11 @@ This project simplifies the creation of knowledge bases from tabular data, enabl
 
 |     | Component      | Details                             |
 | :--- | :-------------- | :----------------------------------- |
-| ⚙️ | **Architecture** | <ul><li>Python-centric.</li><li>microservice architecture (given dependencies like `uv`).</li><li>Event-driven components possible.</li><li>uses a retrieval-augmented generation (RAG) pattern.</li></ul> |
-| 🔩 | **Code Quality** | <ul><li>Uses `pyproject.toml` - likely using a modern Python packaging/linting setup (UV).</li><li>YAML configuration files (`retriver_prompt.yaml`, `column_describe.yaml`) suggest structured configuration.</li><li>`loguru` indicates robust logging practices.</li></ul> |
+| ⚙️ | **Architecture** | <ul><li>Python-centric.</li><li>Microservice architecture (given dependencies like `uv`).</li><li>Event-driven components possible.</li><li>uses a retrieval-augmented generation (RAG) pattern.</li></ul> |
+| 🔩 | **Code Quality** | <ul><li>Uses `pyproject.toml` - Using a modern Python packaging/linting setup (UV).</li><li>YAML configuration files (`retriver_prompt.yaml`, `column_describe.yaml`) suggest structured configuration.</li><li>`loguru` indicates robust logging practices.</li></ul> |
 | 🔌 | **Integrations** | <ul><li>**Langchain:** Core integration for LLM workflows.</li><li>**Langchain-Ollama:**  Connects to Ollama for local LLM serving.</li><li>**Haystack-AI:**  Used for building search pipelines.</li><li>**Ollama-Haystack:** Combines Haystack and Ollama.</li><li>**Pandas:** Data manipulation and analysis.</li><li>**YAML/TOML:** Configuration file parsing.</li></ul> |
 | 🧩 | **Modularity**   | <ul><li>Modular design.</li><li>YAML configuration files promote modularity.</li><li>Langchain's modular components utilized.</li><li>Potential for plugin architecture.</li></ul> |
-| 🧪 | **Testing**      | <ul><li>`pyproject.toml` likely contains testing framework configuration (e.g., pytest).</li><li>Requires investigation of test suite coverage and quality.</li><li>Integration tests are crucial given the number of dependencies.</li></ul> |
+| 🧪 | **Testing**      | <ul><li>`pyproject.toml` Contains testing framework configuration (e.g., pytest).</li><li>Requires investigation of test suite coverage and quality.</li><li>Integration tests are crucial given the number of dependencies.</li></ul> |
 | ⚡️ | **Performance**  | <ul><li>Ollama suggests local LLM inference for potentially faster response times.</li><li>Haystack's indexing and retrieval pipelines impact performance.</li><li>Profiling and optimization likely needed for complex workflows.</li></ul> |
 | 🛡️ | **Security**     | <ul><li>Requires review of dependency vulnerabilities (using tools like `pip-audit`).</li><li>Sensitive data handling (API keys, credentials) needs careful consideration.</li><li>Input validation is critical to prevent prompt injection attacks.</li></ul> |
 
