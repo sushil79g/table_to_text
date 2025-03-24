@@ -1,0 +1,10 @@
+retriver: |
+  Given only the following information, answer the question.
+  Ignore your own knowledge
+  
+  Context:
+  {% for document in documents %}
+    {{ document.content }}
+  {% endfor %}
+  
+  Question: {{ query }}?
